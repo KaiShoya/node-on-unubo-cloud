@@ -6,4 +6,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
+async function start() {
+  app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
+}
+
+start()
