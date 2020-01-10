@@ -7,7 +7,8 @@ app.get('/', (req, res) => {
 });
 
 async function start() {
-  app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
+  app.listen(PORT, 'localhost');
+  console.log(`> Ready on http://localhost:${PORT}`);
 }
 
 start()
